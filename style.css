@@ -1,0 +1,115 @@
+/*页面y*/
+	#y{width:1020px;height:2000px;margin:0 auto;}
+/*头部t*/
+	#y_t{width:1020px;height:165px;position:absolute;}
+/*头上s*/
+	#t_s{height:25%;background-color:#f9f9f9;}
+	#s_z{width:80%;height:18px;padding-top:10px;}
+	#s_z a{border-right:1px solid #000;display:inline-block;height:20px;padding-right:2px;line-height:20px;width:100px}
+	/*头部上导航显示框框（kk）*/
+	#kk{top:50px;position:absolute;box-shadow:0px 0px 3px #ccc;transition:all 500ms ease 0ms;
+		background-color:#fff;display:none;opacity:0;filter:alpha(opacity:0);z-index:999;
+	}
+	/*0 115 160 215*/
+	.k0{width:260px;height:160px;left:0;}
+	.k0 .sj{left:27px}
+	.k1{width:230px;height:320px;left:95px;}
+	.k1 .sj{left:42px}
+	.k2{width:230px;height:350px;left:130px;}
+	.k2 .sj{left:50px}
+	.k3{width:660px;height:300px;left:180px;}
+	.k3 .sj{left:60px}
+	.k4{width:180px;height:280px;left:750px;}
+	.k4 .sj{left:135px}
+	/*男士单品框*/
+	.list{position:absolute;margin:0 20px;display:none;}
+	/*国旗*/
+	.gq{vertical-align:middle;}
+	#gq_list div{margin-right:4px;}
+	#gq_list li{line-height:40px;cursor:pointer;}
+	#gq_list li div{vertical-align:middle;display:inline-block;width:26px;height:20px;background-image:url(./image/flags_1-0.png)}
+	#img{display:inline-block;width:26px;height:16px;background-image:url(./image/flags_1-0.png);
+		background-repeat:no-repeat;background-position:0 -860px;}
+	/*国家*/
+	#g_li li{line-height:25px;cursor:pointer;}
+	#g_li li:hover span{font-weight:bold;}
+	/*国钱*/
+	#q_li{width:100%;height:100%}
+	#q_li ul{display:inline-block;width:210px;}
+	#q_li li{line-height:27px;cursor:pointer}
+	#q_li li:hover span{font-weight:bold;}
+	/*头部上中间*/
+	.s_j{cursor:pointer;margin-left:20%;}
+/*头部上右*/
+	#s_y{position:absolute;right:0;top:0;width:20%;padding-top:8px;}
+	#s_y a{margin-left:5px;}
+
+
+	#s_y .z{vertical-align:bottom;}
+	#z_ul{display:none;width:120px;height:220px;padding:30px;text-align:right;
+			position:absolute;cursor:pointer}
+	#z_ul li{line-height:30px;}
+	.gw{width:100px}
+	.gw a:hover img{width:17px}
+	#s_y .s{vertical-align:bottom}
+	.d{position: absolute;left: 110px;}
+/*头中z*/
+	#t_z{height:55%;width:100%;text-align:center;transition:all 1s linear 0s;}
+	#t_z img{vertical-align:middle;display:inline-block;}
+	#t_z i{width:0px;height:100%;display:inline-block;vertical-align:middle;}
+/*头下x*/
+	#t_x{height:20%;padding-top:5px;transition:all 1s linear 0s;position:relative;}
+	#t_x li{float:left;cursor:pointer;font-size:14px;margin-left:45px;}
+	#t_x .s_box{border-bottom:1px solid #000;margin-left:55px;margin-top:-3px;}
+	#t_x .s_box i{width:15px;height:15px;display:inline-block;background:url(./image/s.png)	no-repeat;background-size:15px;height:15px;
+	}
+	#t_x .s_box .in{border:none;font-size:12px}
+	/*_*/
+    #show{position:absolute;width:2000px;height:400px;background-color:#f9f9f9;left:-50%;top:30px;display:none}
+	.li_show{position:absolute;width:100%;height:0px;opacity:0;background-color:#f9f9f9;margin:0 auto;left:0;top:30px;display:none}
+	.li_show span{position:absolute;}
+	.li_show ul{display:inline-block;height:100%}
+	.li_show ul li{clear:both;font-weight:normal;}
+
+	.red_line{display:block;height:1px;background-color:red;transition:all 1s linear;
+				width:0%;margin-left:50%;
+			}
+	.red_line100{display:block;width:100%;height:1px;background-color:red;transition:all 1s linear;
+				margin-left:0;
+			}
+	.no-img{line-height:37px}
+
+
+
+	.n,.gq,.g,.q,.z{display:inline-block;cursor:pointer;margin-left:3px;}
+	.one,.tow{width:6px;height:1px;background-color:blue;display:block;
+		float:right;transform-origin:50% 50%;
+	}
+	.one{transform:rotate(-40deg);margin:10px 3px 0px -2px;}
+	.tow{transform:rotate(40deg);margin:10px 0px 0px 4px;}
+	.fix{zoom:1;}
+	.fix:after{content:' ';display:block;height:0;line-height:0;visibility:hidden;clear:both;}
+
+	.sj{display:block;width:10px;height:12px;background:#fff;position:relative;
+		top:-10px;
+		left:25px
+	}
+	.sj .o,.sj .t{box-shadow:2px 0px 1px #ccc;width:1px;height:10px;display:block;position:absolute;}
+	.sj .o{transform:rotate(40deg);}
+	.sj .t{top:1px;right:2px;position:absolute;transform:rotate(-40deg)}
+
+/*注册框*/
+	#reg{position:absolute;width:100%;height:100%;display:none;
+		background-image:url(./image/rebrand_shopbop_logo_2x_1-3.png);
+		background-repeat:no-repeat;background-size:200px;135px;background-position:45% 5%;
+
+	}
+	#box{width:100px;height:300px;margin:95px auto;
+
+		}
+	#box label{position:absolute;margin-left:-145px;margin-top:20px}
+	#box input{width:290px;height:30px;margin-left:-145px;margin-top:40px;}
+	#box .dd,.zz{width:140px;height:30px;display:inline-block;line-height:30px;
+				text-align:center;background-color:#f96;color:#fff;position:absolute;
+				margin-top:30px;}
+	#box .dd{margin-left:-145px;}

@@ -1,0 +1,1012 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	 body{width:100%;overflow-x:hidden;}
+	ul,li,body{margin:0;padding:0;font-family:"GT-America-Standard","Helvetica Neue",Helvetica,sans-serif;font-size:14px;}
+	a{text-decoration:none;color:#000;font-size:14px;line-height:14px;}
+	ul{list-style-type:none;}
+	img{vertical-align:middle;}
+/*页面y*/
+	#y{width:1020px;height:2000px;margin:0 auto;}
+/*头部t*/
+	#y_t{width:1020px;height:165px;position:absolute;}
+/*头上s*/
+	#t_s{height:25%;background-color:#f9f9f9;}
+	#s_z{width:80%;height:18px;padding-top:10px;}
+	#s_z a{border-right:1px solid #000;display:inline-block;height:20px;padding-right:2px;line-height:20px;width:100px}
+	/*头部上导航显示框框（kk）*/
+	#kk{top:50px;position:absolute;box-shadow:0px 0px 3px #ccc;transition:all 500ms ease 0ms;
+		background-color:#fff;display:none;opacity:0;filter:alpha(opacity:0);z-index:999;
+	}
+	/*0 115 160 215*/
+	.k0{width:260px;height:160px;left:0;}
+	.k0 .sj{left:27px}
+	.k1{width:230px;height:320px;left:95px;}
+	.k1 .sj{left:42px}
+	.k2{width:230px;height:350px;left:130px;}
+	.k2 .sj{left:50px}
+	.k3{width:660px;height:300px;left:180px;}
+	.k3 .sj{left:60px}
+	.k4{width:180px;height:280px;left:750px;}
+	.k4 .sj{left:135px}
+	/*男士单品框*/
+	.list{position:absolute;margin:0 20px;display:none;}
+	/*国旗*/
+	.gq{vertical-align:middle;}
+	#gq_list div{margin-right:4px;}
+	#gq_list li{line-height:40px;cursor:pointer;}
+	#gq_list li div{vertical-align:middle;display:inline-block;width:26px;height:20px;background-image:url(./image/flags_1-0.png)}
+	#img{display:inline-block;width:26px;height:16px;background-image:url(./image/flags_1-0.png);
+		background-repeat:no-repeat;background-position:0 -860px;}
+	/*国家*/
+	#g_li li{line-height:25px;cursor:pointer;}
+	#g_li li:hover span{font-weight:bold;}
+	/*国钱*/
+	#q_li{width:100%;height:100%}
+	#q_li ul{display:inline-block;width:210px;}
+	#q_li li{line-height:27px;cursor:pointer}
+	#q_li li:hover span{font-weight:bold;}
+	/*头部上中间*/
+	.s_j{cursor:pointer;margin-left:20%;}
+/*头部上右*/
+	#s_y{position:absolute;right:0;top:0;width:20%;padding-top:8px;}
+	#s_y a{margin-left:5px;}
+
+
+	#s_y .z{vertical-align:bottom;}
+	#z_ul{display:none;width:120px;height:220px;padding:30px;text-align:right;
+			position:absolute;cursor:pointer}
+	#z_ul li{line-height:30px;}
+	.gw{width:100px}
+	.gw a:hover img{width:17px}
+	#s_y .s{vertical-align:bottom}
+	.d{position: absolute;left: 110px;}
+/*头中z*/
+	#t_z{height:55%;width:100%;text-align:center;transition:all 1s linear 0s;}
+	#t_z img{vertical-align:middle;display:inline-block;}
+	#t_z i{width:0px;height:100%;display:inline-block;vertical-align:middle;}
+/*头下x*/
+	#t_x{height:20%;padding-top:5px;transition:all 1s linear 0s;position:relative;}
+	#t_x li{float:left;cursor:pointer;font-size:14px;margin-left:45px;}
+	#t_x .s_box{border-bottom:1px solid #000;margin-left:55px;margin-top:-3px;}
+	#t_x .s_box i{width:15px;height:15px;display:inline-block;background:url(./image/s.png)	no-repeat;background-size:15px;height:15px;
+	}
+	#t_x .s_box .in{border:none;font-size:12px}
+	/*_*/
+    #show{position:absolute;width:2000px;height:400px;background-color:#f9f9f9;left:-50%;top:30px;display:none}
+	.li_show{position:absolute;width:100%;height:0px;opacity:0;background-color:#f9f9f9;margin:0 auto;left:0;top:30px;display:none}
+	.li_show span{position:absolute;}
+	.li_show ul{display:inline-block;height:100%}
+	.li_show ul li{clear:both;font-weight:normal;}
+
+	.red_line{display:block;height:1px;background-color:red;transition:all 1s linear;
+				width:0%;margin-left:50%;
+			}
+	.red_line100{display:block;width:100%;height:1px;background-color:red;transition:all 1s linear;
+				margin-left:0;
+			}
+	.no-img{line-height:37px}
+
+
+
+	.n,.gq,.g,.q,.z{display:inline-block;cursor:pointer;margin-left:3px;}
+	.one,.tow{width:6px;height:1px;background-color:blue;display:block;
+		float:right;transform-origin:50% 50%;
+	}
+	.one{transform:rotate(-40deg);margin:10px 3px 0px -2px;}
+	.tow{transform:rotate(40deg);margin:10px 0px 0px 4px;}
+	.fix{zoom:1;}
+	.fix:after{content:' ';display:block;height:0;line-height:0;visibility:hidden;clear:both;}
+
+	.sj{display:block;width:10px;height:12px;background:#fff;position:relative;
+		top:-10px;
+		left:25px
+	}
+	.sj .o,.sj .t{box-shadow:2px 0px 1px #ccc;width:1px;height:10px;display:block;position:absolute;}
+	.sj .o{transform:rotate(40deg);}
+	.sj .t{top:1px;right:2px;position:absolute;transform:rotate(-40deg)}
+
+/*注册框*/
+	#reg{position:absolute;width:100%;height:100%;display:none;
+		background-image:url(./image/rebrand_shopbop_logo_2x_1-3.png);
+		background-repeat:no-repeat;background-size:200px;135px;background-position:45% 5%;
+
+	}
+	#box{width:100px;height:300px;margin:95px auto;
+
+		}
+	#box label{position:absolute;margin-left:-145px;margin-top:20px}
+	#box input{width:290px;height:30px;margin-left:-145px;margin-top:40px;}
+	#box .dd,.zz{width:140px;height:30px;display:inline-block;line-height:30px;
+				text-align:center;background-color:#f96;color:#fff;position:absolute;
+				margin-top:30px;}
+	#box .dd{margin-left:-145px;}
+
+  </style>
+ </head>
+ <body>
+	<div id="reg" class="">
+
+		<div id="box" class="">
+		<form method="post" action="">
+
+			<label for="user">邮箱地址</label>
+			<input id="user"name="user"type="text">
+
+			<label for="pass">密码</label>
+			<input id="pass"name="pass"type="text">
+			<span class="dd">登录</span><span class="zz">注册</span>
+		</form>
+
+		</div>
+	</div>
+	<div id="y" class="">
+		<div id="y_t" class="">
+			<div id="t_s" class="">
+				<div id="s_z" class="">
+					<span class="n">
+						<a href="javascript:;">
+							选购男士单品
+						</a>
+						<div id="" class="list">
+							<p>选购......男士时装
+							</p>
+							<p><img src="./image/0.jpg" width="220" height="30" alt="" />
+							</p>
+							<hr>
+							<p>您在shopbop购物车的商品将保留在您的账户中
+							</p>
+						</div>
+
+					</span>
+					<span class="gq">
+						<span id="img" class=""style="">
+						</span>
+						<span class="one"></span>
+						<span class="tow"></span>
+						<div id="" class="list"style="width:90%;height:90%;overflow-y:scroll;">
+							<ul id="gq_list">
+								<li ><div style="background-position:0 -4000px"></div>美国</li>
+								<li><div style="background-position:0 -680px"></div>加拿大</li>
+								<li><div style="background-position:0 -860px"></div>中国</li>
+								<li><div style="background-position:0 -3380px"></div>俄罗斯</li>
+								<hr />
+								<li><div></div>斐济</li>
+								<li><div></div>摩尔多瓦</li>
+								<li><div></div>也门</li>
+								<li><div></div>约旦</li>
+								<li><div></div>阿曼</li>
+								<li><div></div>阿富汗</li>
+								<li><div></div>不丹</li>
+								<li><div></div>伊朗</li>
+								<li><div></div>赞比亚</li>
+								<li><div></div>民主刚果</li>
+								<li><div></div>科特迪瓦</li>
+								<li><div></div>摩洛哥</li>
+								<li><div></div>佛得角</li>
+								<li><div></div>苏丹</li>
+								<li><div></div>乌干达</li>
+								<li><div></div>厄立特里亚</li>
+								<li><div></div>赤道几内亚</li>
+								<li><div></div>圣多美和普林西比</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+								<li><div></div>加拿大</li>
+								<li><div></div>中国</li>
+								<li><div></div>俄罗斯</li>
+							</ul>
+						</div>
+					</span>
+					<span class="g">
+					    <span>ZH</span>
+					    <span class="one"></span>
+						<span class="tow"></span>
+						<div id="" class="list">
+							<ul id="g_li">
+								<h5>全译文</h5>
+								<li>英文<span>(English)</span></li>
+								<li>中文<span></span></li>
+								<li>俄文<span>(русский)</span></li>
+								<h5>部分译文</h5>
+								<li>韩文<span>(한국어)</span></li>
+								<li>法文<span>(Français)</span></li>
+								<li>德文<span>(Deutsch)</span></li>
+								<li>日文<span>(日本語)</span></li>
+								<li>西班牙文<span>(Español)</span></li>
+							</ul>
+						</div>
+
+					</span>
+					<span class="q">
+                      <span>$USD</span>
+					   <span class="one"></span>
+					   <span class="tow"></span>
+
+						<div id="q_li" class="list">
+							<ul>
+								<li>常用货币</li>
+								<li>美元<span>($USD)</span></li>
+								<li>中国人民币元<span>(¥CNY)</li>
+								<li>欧元<span>(€EUR)</span></li>
+								<li>加元<span>($CAD)</span></li>
+								<li>英镑<span>(£GBP)</span></li>
+								<li>日本日元<span>(¥JPY)</span></li>
+								<li>韩国韩元<span>(₩KRW)</span></li>
+								<li>俄罗斯卢布<span>(RUB)</span></li>
+								<li>阿联酋迪尔汗<span>(AED)</span></li>
+							</ul>
+							<ul>
+								<li>更多选项</li>
+								<li>丹麦克朗<span>(DKK)</span></li>
+								<li>以色列谢克尔<span>(₪ILS)</span></li>
+								<li>南非兰特<span>(ZAR)</span></li>
+								<li>印度卢比<span>(₹INR)</span></li>
+								<li>土耳其里拉<span>(TRY)</span></li>
+								<li>墨西哥比索<span>($MXN)</span></li>
+								<li>巴西雷亚尔<span>($BRL)</span></li>
+								<li>挪威克郎<span>(NOK)</span></li>
+								<li>新加坡元<span>(SGD)</span></li>
+							</ul>
+							<ul>
+								<li>新台币<span>($TWD)</span></li>
+								<li>新西兰元<span>($NZD)</span></li>
+								<li>沙特阿拉伯利亚尔<span>(SAR)</span></li>
+								<li>波兰兹罗提<span>(PLN)</span></li>
+								<li>澳大利亚元<span>($AUD)</span></li>
+								<li>瑞典克朗<span>(SEK)</span></li>
+								<li>瑞士法郎<span>(CHF)</span></li>
+								<li>科威特第纳尔<span>(KWD)</span></li>
+								<li>香港港元<span>($HKD)</span></li>
+
+							</ul>
+						</div>
+
+					</span>
+					<span class="s_j">免费国际快递+轻松退货</span>
+
+
+
+
+					<div id="kk" class="">
+						<span class="sj">
+							<span class="o"></span>
+							<span class="t"></span>
+						</span>
+						<i></i>
+					</div>
+
+
+
+				</div>
+			</div>
+			<div id="s_y" class="">
+				   <span class="z">
+						<a href="#">登录/注册</a>
+					    <span class="one"></span>
+					    <span class="tow"></span>
+
+						<ul id="z_ul">
+							<li>账户</li>
+							<li>订单</li>
+							<li>我的会员</li>
+							<li>我的评论</li>
+							<li>收藏夹</li>
+							<li>我的心愿单</li>
+							<li>我的品牌</li>
+						</ul>
+				   </span>
+					<span class="gw">
+						<a href="#">
+							<img src="./image/rebrand-hearts_1-0.png" width="16px" height="" alt="" />
+						</a>
+						<a href="#" class="d">
+							<img src="./image/bag_1-0.png" width="16px" height="" alt="" />
+							<span class="s">0</span>
+						</a>
+					</span>
+				</div>
+			<div id="t_z" class="">
+				<img id ="t_z_img"src="./image/rebrand_shopbop_logo_2x_1-3.png" width="200px" height="50px" alt="shopbop" />
+				<i></i>
+			</div>
+			<div id="t_x" class="">
+				<div id="show" class="">
+
+				</div>
+				<ul class="fix">
+					<li>新款上市
+						<span class="red_line"></span>
+						<div id="" class="li_show">
+							<ul class="no-img">
+								<li><h5>新款上市</h5></li>
+								<li>今日新品</li>
+								<li>本周新品</li>
+								<li>全球热卖榜单</li>
+								<li>热卖补货</li>
+								<li>名师精品推荐</li>
+								<li>全部新款上市</li>
+							</ul>
+							<ul class="no-img">
+								<li><h5>按种类购买全部新品</h5></li>
+								<li>服装</li>
+								<li>鞋履</li>
+								<li>包装</li>
+								<li>配饰</li>
+							</ul>
+							<ul class="no-img">
+								<li><h5>发现</h5></li>
+								<li>FRAME新品</li>
+								<li>10大必备单品</li>
+								<li>Cinq 新品</li>
+								<li>挚爱推荐</li>
+								<li>柔份世界</li>
+								<li>查看品牌故事</li>
+							</ul>
+							<ul>
+								<li><h5>&nbsp</h5></li>
+								<li><img src="./image/e.jpg" width="184px" height="244px" alt="" /></li>
+								<li>耳环效应</li>
+								<li style="color:#ffcc33">查看品牌效应</li>
+							</ul>
+							<ul>
+								<li><h5>&nbsp</h5></li>
+								<li><img src="./image/f.jpg" width="184px" height="244px" alt="" /></li>
+								<li>FRAME新品</li>
+								<li style="color:#ffcc33">查看品牌效应</li>
+							</ul>
+						</div>
+					</li>
+				<li>初秋时髦清单
+						<span class="red_line"></span>
+						<div id="" class="li_show">
+							<ul style="line-height:27px">
+								<li><h5>初秋时髦清单</h5></li>
+								<li>上衣派对</li>
+								<li>花卉力量</li>
+								<li>亮色彩虹</li>
+								<li>气质猫跟</li>
+								<li>摩登牛仔</li>
+								<li>编制包装</li>
+								<li>美貌出众</li>
+								<li>时髦泳装</li>
+								<li>暖意羽绒</li>
+								<li>悠闲时刻</li>
+							</ul>
+							<ul>
+								<li><h5>&nbsp</h5></li>
+								<li><img src="./image/1-0.jpg" width="170px" height="244px" alt="" /></li>
+								<li>上衣派对</li>
+								<li style="color:#ffcc33">立刻选购</li>
+							</ul>
+							<ul>
+								<li><h5>&nbsp</h5></li>
+								<li><img src="./image/2-0.jpg" width="170px" height="244px" alt="" /></li>
+								<li>气质猫跟</li>
+								<li style="color:#ffcc33">立刻选购</li>
+							</ul>
+							<ul>
+								<li><h5>&nbsp</h5></li>
+								<li><img src="./image/3-0.jpg" width="170px" height="244px" alt="" /></li>
+								<li>摩登牛仔</li>
+								<li style="color:#ffcc33">立刻选购</li>
+							</ul>
+							<ul>
+								<li><h5>&nbsp</h5></li>
+								<li><img src="./image/4-0.jpg" width="170px" height="244px" alt="" /></li>
+								<li>花卉力量</li>
+								<li style="color:#ffcc33">立刻选购</li>
+							</ul>
+						</div>
+					</li>
+					<li>品牌
+						<span class="red_line"></span>
+						<div id="" class="li_show">
+							<ul>
+								<li><h5>品牌</h5></li>
+								<li>
+									<ul style="margin-left:-40px">
+										<li>A&nbspB&nbspC&nbspD&nbspE</li>
+										<li>F&nbspG&nbspH&nbspI&nbspJ</li>
+										<li>K&nbspL&nbspM&nbspN&nbspO</li>
+										<li>P&nbspQ&nbspR&nbspS&nbspT</li>
+										<li>U&nbspV&nbspW&nbspX&nbspY</li>
+										<li>Z&nbsp#</li>
+									</ul>
+								</li>
+								<li style="line-height:37px">所有设计师</li>
+								<li style="line-height:37px">设计精品</li>
+							</ul>
+							<ul class="no-img">
+								<li><h5>Names to Know</h5></li>
+								<li>ANINE BING</li>
+								<li>Complet</li>
+								<li>Ksenia Schnaider</li>
+								<li>Marques Almeida</li>
+								<li>Sandy Liang</li>
+							</ul>
+							<ul class="no-img">
+								<li><h5>New Designers</h5></li>
+								<li>F.R.S For Restless Sleepers</li>
+								<li>RIXO London</li>
+								<li>Tabitha Simmons</li>
+								<li>THE VOLON</li>
+								<li>YOSUZI</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/sb.jpg" width="" height="" alt="" /></li>
+								<li>风尚聚焦: 法国设计师</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/sb1.jpg" width="" height="" alt="" /></li>
+								<li>品牌聚焦: Coach 1941</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+						</div>
+					</li>
+					<li>服装
+						<span class="red_line"></span>
+						<div id="" class="li_show">
+							<ul class="no-img">
+								<li><h5>服装</h5></li>
+								<li>运动装</li>
+								<li>连衣裙</li>
+								<li>夹克/外套</li>
+								<li>牛仔裤</li>
+								<li>J连身衣/短款连身衣</li>
+								<li>内裤/睡衣裤</li>
+								<li>孕妇装</li>
+								<li>裤子/贴退裤</li>
+								<li>短裤</li>
+
+							</ul>
+							<ul  class="no-img">
+								<li><h5>NAMES TO KNOW</h5></li>
+								<li>ANINE BING</li>
+								<li>Complet</li>
+								<li>Ksenia Schnaider</li>
+								<li>Marques Almeida</li>
+								<li>Sandy Liang</li>
+							</ul>
+							<ul  class="no-img">
+								<li><h5>发现</h5></li>
+								<li>设计精品</li>
+								<li>主编推荐</li>
+								<li>$200以下时尚新发型</li>
+								<li>Shopbop独家销售</li>
+								<li>全球热卖榜单</li>
+								<li>中国地区热卖榜单</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/ff.jpg" width="184" height="244" alt="" /></li>
+								<li>必知品牌：复古风T恤</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/ff1.jpg" width="184" height="244" alt="" /></li>
+								<li>风尚进阶：花卉印花</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+						</div>
+					</li>
+					<li>鞋履
+						<span class="red_line"></span>
+						<div id="" class="li_show">
+							<ul class="no-img">
+								<li><h5>鞋履</h5></li>
+								<li>短靴</li>
+								<li>靴子</li>
+								<li>编织底帆布鞋</li>
+								<li>平底鞋</li>
+								<li>穆勒鞋/无根便鞋</li>
+								<li>浅口鞋</li>
+								<li>雨鞋</li>
+								<li>凉鞋</li>
+								<li>冬鞋</li>
+
+							</ul>
+							<ul  class="no-img">
+								<li><h5>NAMES TO KNOW</h5></li>
+								<li>Fila</li>
+								<li>Complet</li>
+								<li>Ksenia Schnaider</li>
+								<li>keds</li>
+								<li>Sandy Liang</li>
+							</ul>
+							<ul  class="no-img">
+								<li><h5>发现</h5></li>
+								<li>名师精品</li>
+								<li>正装鞋</li>
+								<li>婚鞋</li>
+								<li>Shopbop独家销售</li>
+								<li>全球热卖榜单</li>
+								<li>中国地区热卖榜单</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/c.jpg" width="184" height="244" alt="" /></li>
+								<li>春日主打：草编鞋</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/y.jpg" width="184" height="244" alt="" /></li>
+								<li>一步到位</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+						</div>
+					</li>
+					<li>包袋
+						<span class="red_line"></span>
+						<div id="" class="li_show">
+							<ul class="no-img">
+								<li><h5>包袋</h5></li>
+								<li>妈咪包</li>
+								<li>背包</li>
+								<li>沙滩包</li>
+								<li>腰包</li>
+								<li>手包</li>
+								<li>斜挎包</li>
+								<li>健身包袋</li>
+								<li>行李箱</li>
+								<li>全部包袋</li>
+
+							</ul>
+							<ul  class="no-img">
+								<li><h5>NAMES TO KNOW</h5></li>
+								<li>Clare V.</li>
+								<li>Salvatore Ferragamo</li>
+								<li>STAUD</li>
+								<li>Tory Burch</li>
+								<li>ZAC Zac Posen</li>
+							</ul>
+							<ul  class="no-img">
+								<li><h5>发现</h5></li>
+								<li>黑色手袋</li>
+								<li>经典包装</li>
+								<li>精品设计</li>
+								<li>旅行包</li>
+								<li>复古包</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/b.jpg" width="184" height="244" alt="" /></li>
+								<li>全新上线：个性包款</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/b1.jpg" width="184" height="244" alt="" /></li>
+								<li>In设计：腰包</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+						</div>
+					</li>
+					<li>配饰
+						<span class="red_line"></span>
+						<div id="" class="li_show">
+							<ul class="no-img">
+								<li><h5>首饰</h5></li>
+								<li>脚链</li>
+								<li>手链/手镯</li>
+								<li>耳环</li>
+								<li>精致珠宝</li>
+								<li>手链/美体链</li>
+								<li>珠宝盒</li>
+								<li>项链</li>
+								<li>个性化定制首饰</li>
+								<li>全部珠宝&饰品</li>
+
+							</ul>
+							<ul  class="no-img">
+								<li><h5>配饰</h5></li>
+								<li>运动配饰</li>
+								<li>腰带</li>
+								<li>手套</li>
+								<li>头饰</li>
+								<li>帽子</li>
+								<li>家饰/礼品</li>
+								<li>钥匙链/包饰</li>
+								<li>围巾/披肩</li>
+								<li>旅行</li>
+							</ul>
+							<ul  class="no-img">
+								<li><h5>发现</h5></li>
+								<li>经典首饰</li>
+								<li>设计精品</li>
+								<li>精选礼物精品馆</li>
+								<li>T时尚潮流：单只耳环</li>
+								<li>冬季配饰</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/p.jpg" width="184px" height="244px" alt="" /></li>
+								<li>时髦至上：草帽</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/pp.jpg" width="184px" height="244px" alt="" /></li>
+								<li>风尚视界：窄版墨镜</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+						</div>
+					</li>
+					<li>折扣促销
+							<span class="red_line"></span>
+					<div id="" class="li_show">
+						<ul class="no-img">
+								<li><h5>折扣促销</h5></li>
+								<li>新品促销</li>
+								<li>折扣促销</li>
+							</ul>
+							<ul  class="no-img">
+								<li><h5>按类别出售</h5></li>
+								<li>服装</li>
+								<li>鞋履</li>
+								<li>包袋</li>
+								<li>配饰</li>
+								<li>名师精品推荐</li>
+							</ul>
+							<ul  class="no-img">
+								<li><h5>发现</h5></li>
+								<li>编辑促销精选</li>
+								<li>低于100美元的折扣精选</li>
+							</ul>
+							<ul>
+								<li></li>
+							</ul>
+							<ul>
+								<li><h5></h5></li>
+								<li><img src="./image/zk.jpg" width="385px" height="244px" alt="" /></li>
+								<li>3折优惠,清仓特惠</li>
+								<li style="color:#ffcc33">立刻购买</li>
+							</ul>
+					</div>
+					</li>
+					<li class="s_box">
+						<i class="btn"></i>
+						<input type="text" class="in"name="search"placeholder="请用英文搜索">
+						<!--<span class="text">请用英文搜索</span>!!-->
+					</li>
+				</ul>
+
+
+			</div>
+			<div id="" class="">
+			<img src="./image/i.jpg" width="1024px" height="590px" alt="" />
+			</div>
+		</div>
+
+	</div>
+
+<script type="text/javascript">
+//给show加移入移除事件
+	window.onload=function(){
+		var reg=document.getElementById('reg');
+		var y=document.getElementById('y');
+		var y_t=document.getElementById('y_t');
+		var t_s=document.getElementById('t_s');
+		var s_z=document.getElementById('s_z');
+		var kk=document.getElementById('kk');
+		var oul=document.getElementById('gq_list');
+		var gq_img=document.getElementById('img');
+		var	gq_list=oul.getElementsByTagName('div');
+		var gq_list_l=gq_list.length;
+		var s_y=document.getElementById('s_y');
+		var t_z=document.getElementById('t_z');
+		var t_z_img=document.getElementById('t_z_img');
+		var z=document.getElementById('s_y').getElementsByTagName('span')[0];
+		var t_x=document.getElementById('t_x');
+		var show=document.getElementById('show');
+		var t_ul=t_x.children[1];
+		var t_li=t_ul.children;
+		var t_li_l=t_li.length;
+		var addEvent=null;
+
+		//g_li q_li z
+		(function(){
+			if(addEventListener){
+				addEvent=function(obj,e,f){
+					obj.addEventListener(e,f,false);
+				};
+			}else if(attachEvent){
+				addEvent=function(obj,e,f){
+					obj.attachEvent('on'+e,function(){
+						f.call(obj,arguments)
+					});
+				}
+			}else{
+				addEvent=function(obj,e,f){
+					e['on'+e]=f;
+				}
+			}
+		})();
+
+		var i=0;
+		addEvent(document,"scroll",f);
+		var cTop=0,oTop=0;
+		function f(e){//scroll
+			var f=false;
+			cTop=document.documentElement.scrollTop||document.body.scrollTop;
+			f=(cTop-oTop)<0;
+			oTop=cTop;
+			if(f){
+				//朝上走
+				if(cTop!=0){
+					y_t.style.cssText="position:fixed;height:100px;background:none";
+					t_s.style.display="none";
+					t_z_img.style.cssText="width:100px;hiegth:10px";
+				}else{
+					y_t.style.cssText="transition:all 300ms ease 0s;";
+					t_z_img.style.cssText="transition:all 300ms ease 0s;";
+					t_s.style.display="block";
+
+				}
+			}else{
+				//朝下走
+				y_t.style.position="relative"
+			}
+			document.title=f
+		}
+		var span=s_z.children;
+		var l=span.length;
+		var move={};
+		for(var i=0;i<l-2;i++){//上导航鼠标移入移除
+			span[i].index=i;
+			span[i].div=span[i].getElementsByTagName('div')[0];
+			span[i].onmouseover=function(){
+
+				clearTimeout(kk.timer);
+				clearTimeout(move.timer);
+				kk.removeChild(kk.lastChild)
+				kk.appendChild(this.div);
+				this.div.style.display="block";
+				kk.style.display="block";
+				kk.style.opacity=1;
+				kk.style.filter="alpha(opacity:1)";
+				console.log(this.index)
+				kk.className="k"+this.index
+
+			}
+			span[i].onmouseout=function(){
+				move=this;
+				move.timer=setTimeout(function(){
+					kk.style.display="none";
+					kk.style.opacity=0;
+					kk.style.filter="alpha(opacity:0)";
+				},100);
+			}
+		}
+		kk.onmouseover=function(e){
+			var e=e||window.event;
+			clearTimeout(move.timer);
+			clearTimeout(kk.timer);
+			e.stopPropagation();
+			e.cancelbubble=true;
+		}
+		kk.onmouseout=function(e){
+			var e=e||window.event;
+			this.timer=setTimeout(function(){
+				kk.style.display="none";
+				kk.style.opacity=0;
+				kk.style.filter="alpha(opacity:0)";
+			},100)
+			e.stopPropagation();
+			e.cancelbubble=true;
+		}
+		z.div=document.getElementById('z_ul');
+
+		z.onmouseover=function(){
+				clearTimeout(kk.timer);
+				clearTimeout(move.timer);
+
+
+				kk.removeChild(kk.lastChild)
+				kk.appendChild(this.div);
+				this.div.style.display="block";
+				kk.style.display="block";
+				kk.style.opacity=1;
+				kk.style.filter="alpha(opacity:1)";
+				kk.className="k4";
+		}
+		z.onmouseout=function(){
+			move=this;
+				move.timer=setTimeout(function(){
+					kk.style.display="none";
+					kk.style.opacity=0;
+					kk.style.filter="alpha(opacity:0)";
+				},100);
+		}
+		z.div.onclick=span[2].div.onclick=span[3].div.onclick=function(){
+			y.style.display="none";
+			reg.style.display="block";
+		}
+		reg.onclick=function(){
+			y.style.display="block";
+			reg.style.display="none";
+		}
+		function getStyle(obj,style){//获取元素样式值
+			if(getComputedStyle){
+				return window.getComputedStyle(obj,false)[style]
+			}else if(obj.currentStyle){
+				return obj.currentStyle(style)
+			}
+		}
+		function move2(obj,c,t,fn){//c{width:100,height:100},t{width:200,hieght:200}//样式变化
+			//console.log(obj,c,t)
+			clearInterval(obj.timer);
+
+			obj.timer=setInterval(function(){
+				var speed=0;
+				for(var key in c){//c[key]直
+				//	console.log(key)
+
+					if(key=="opacity"){
+						//console.log(c[key])
+						speed=t[key]-c[key]>0?Math.ceil((t[key]-c[key])/10):Math.floor((t[key]-c[key])/6);
+						c[key]+=speed;
+						obj.style.opacity=c[key]/100;
+						obj.style.filter="alpha(opacity="+c[key]+")";
+					}
+					else{
+						speed=t[key]-c[key]>0?Math.ceil((t[key]-c[key])/10):Math.floor((t[key]-c[key])/2);
+						c[key]+=speed;
+						obj.style[key]=c[key]+'px';
+					}
+
+					if(c[key]==t[key]){
+						delete c[key];
+					}
+				}
+				if(typeof key=='undefined'){
+					clearInterval(obj.timer);
+					if(fn){fn()}
+				}
+			},10)
+		}
+		function addBackground(){
+			for(var i=4;i<gq_list_l;i++){
+				gq_list[i].style.backgroundPosition="0 "+(-i*20)+"px";
+			}
+			oul.onclick=function(e){
+				var e=e||event;
+				var target=e.target||e.srcElement;
+				target=target.tagName=="DIV"?target:target.getElementsByTagName("div")[0];
+				//if(target.tagName=="DIV"){
+					 gq_img.style.backgroundPosition=target.style['backgroundPosition'];
+				//}
+			}
+		}
+		addBackground();
+		//下导航鼠标事件
+		function fixedObj(fixed,change){
+			fixed.timerId="none";
+			change.timerId="none";
+
+			fixed.onmouseover=function(e){
+
+				clearTimeout(this.timerId);
+				 clearTimeout(change.timerId);
+				 show.style.display="block";
+
+
+				if((change.timerId=="none")||(this.timerId=="none")){
+					change.style.display="block";
+					show.style.display="block";
+					fixed.span.className="red_line100";
+					fixed.style.fontWeight="bold";
+					move2(change,{height:0,opacity:0},{height:400,opacity:100}
+					)
+				}
+			}
+			fixed.onmouseout=function(){
+				this.timerId=setTimeout(function(){
+					fixed.timerId="none";
+					show.style.display="none";
+					fixed.span.className="fred_line";
+					fixed.style.fontWeight="normal";
+				//alert("")
+					move2(change,{height:400,opacity:100},{height:0,opacity:0},function(){
+
+						change.style.display="none";
+
+					})
+				},100)
+			}
+		}
+		function changeObj(fixed,change){
+			change.onmouseover=function(e){
+				//alert(change)
+				var e=e||event;
+				clearTimeout(fixed.timerId);
+				clearTimeout(change.timerId);
+
+				e.stopPropagation();
+				e.cancelBubble=true;
+			}
+			change.onmouseout=function(e){
+				var e=e||event;
+				this.timerId=setTimeout(function(){
+					change.timerId="none";
+
+					fixed.span.className="red_line";
+					fixed.style.fontWeight="normal";
+				move2(change,{height:400,opacity:100},{height:0,opacity:0},function(){
+					change.style.display="none";
+					show.style.display="none";
+				})
+
+
+
+				},100)
+				e.stopPropagation();
+				e.cancelBubble=true;
+
+			}
+		}
+		for(var i=0;i<t_li_l-1;i++){
+			t_li[i].div=t_li[i].getElementsByTagName("div")[0];
+
+			t_li[i].span=t_li[i].getElementsByTagName("span")[0];
+			fixedObj(t_li[i],t_li[i].div);
+			changeObj(t_li[i],t_li[i].div);
+		}
+	}
+</script>
+ </body>
+</html>
